@@ -1,13 +1,10 @@
 /**:
   ros__parameters:
     enable_delay_compensation: true
-    prediction_time_horizon:
-      vehicle: 15.0 #[s]
-      pedestrian: 10.0 #[s]
-      unknown: 10.0 #[s]
+    prediction_time_horizon: 10.0 #[s]
     lateral_control_time_horizon: 5.0 #[s]
     prediction_sampling_delta_time: 0.5 #[s]
-    min_velocity_for_map_based_prediction: 1.0 #[m/s]
+    min_velocity_for_map_based_prediction: 1.39 #[m/s]
     min_crosswalk_user_velocity: 1.39 #[m/s]
     max_crosswalk_user_delta_yaw_threshold_for_lanelet: 0.785 #[m/s]
     dist_threshold_for_searching_lanelet: 3.0 #[m]
@@ -31,8 +28,8 @@
     # parameter for shoulder lane prediction
     prediction_time_horizon_rate_for_validate_shoulder_lane_length: 0.8
     use_crosswalk_user_history:
-       match_lost_and_appeared_users: false
-       remember_lost_users: false
+      match_lost_and_appeared_users: false
+      remember_lost_users: false
 
     # parameters for lc prediction
     lane_change_detection:
@@ -50,8 +47,3 @@
       consider_only_routable_neighbours: false
 
     reference_path_resolution: 0.5 #[m]
-
-    # debug parameters
-    publish_processing_time: true
-    publish_processing_time_detail: true
-    publish_debug_markers: true

@@ -1,7 +1,7 @@
 /**:
   ros__parameters:
+    max_iteration_num: 100
     traffic_light_signal_timeout: 1.0
-
     planning_hz: 10.0
     backward_path_length: 5.0
     forward_path_length: 300.0
@@ -17,10 +17,13 @@
     turn_signal_minimum_search_distance: 10.0
     turn_signal_search_time: 3.0
     turn_signal_shift_length_threshold: 0.3
-    turn_signal_remaining_shift_length_threshold: 0.1
     turn_signal_on_swerving: true
 
     enable_akima_spline_first: false
     enable_cog_on_centerline: false
     input_path_interval: 2.0
     output_path_interval: 2.0
+
+    closest_lanelet:
+      distance_threshold: 5.0 # [m]
+      yaw_threshold: 0.79 # [rad]

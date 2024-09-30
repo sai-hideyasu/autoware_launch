@@ -23,6 +23,7 @@
           motorcycle: false
           bicycle: false
           unknown: false
+
         turn_direction:
           left: true
           right: true
@@ -95,13 +96,13 @@
         occupied_min: 58
         denoise_kernel: 1.0
         attention_lane_crop_curvature_threshold: 0.25
-        attention_lane_curvature_calculation_ds: 0.6
+        attention_lane_curvature_calculation_ds: 0.5
         creep_during_peeking:
           enable: false
           creep_velocity: 0.8333
         peeking_offset: -0.5
         occlusion_required_clearance_distance: 55.0
-        possible_object_bbox: [1.9, 2.5]
+        possible_object_bbox: [1.5, 2.5]
         ignore_parked_vehicle_speed_threshold: 0.8333
         occlusion_detection_hold_time: 1.5
         temporal_stop_time_before_peeking: 0.1
